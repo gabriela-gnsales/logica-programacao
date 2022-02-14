@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="somar.css">
 </head>
 <body>
-    <h1>Calculadora</h1>
+    <h1>Calculadora - operação soma</h1>
     <hr>
     <label for="">Primeiro número:</label>
-    <input type="text" id="num1" value="" autofocus>
+    <input type="text" id="num1" value="" autofocus> 
     <br><br>
     <label for="">Segundo número:</label>
-    <input type="text" id="num2">
+    <input type="number" id="num2">
     <button onclick="calcular()">Calcular</button>
     <hr>
     <label for="">Resultado:</label>
-    <input id="innerHTMLtxt" type="text">)
+    <p class="resultado"></p>
+    <!-- <input type="text" class="resultado"> -->
     <hr>
     <script src="calculadora.js"></script>
 </body>
