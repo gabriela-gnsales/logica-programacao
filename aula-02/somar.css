@@ -13,3 +13,24 @@
 .resultado {
     font-size: 3em;
 } */
+
+* {
+    margin: 0px;
+    background-color: rgba(160, 26, 26, 0.267);
+}
+
+/* body {
+    display: grid; 
+    width: 100%;
+    background-image: linear-gradient(to bottom, blue, rgba(0, 0, 255, 0.568));
+} */
+
+console.log('===Calculadora===')
+function calcular() {
+    document.getElementById('result').value = (
+        Number(document.getElementById('n1').value.toString().replace(',','.')) + Number(document.getElementById('n2').value.toString().replace(',','.'))
+        ).toString().replace('.',',');
+}
+
+required 
+no html
