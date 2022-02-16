@@ -1,7 +1,7 @@
 console.log("=== COMPARAÇÃO ===");
 
-function comparacao() {
-    console.log("Comparando Maior Que...");
+function comparacao1() {
+    console.log("Usando função Comparação1() ...");
     
     const n1 = parseInt(document.getElementById("n1").value);
     console.log("n1:", n1, "| type:", typeof n1);
@@ -12,6 +12,13 @@ function comparacao() {
     
     const result = n1 > n2;
     console.log("resultado:", result, "| type:", typeof result);
+
+    if (cowomp == true){
+        document.getElementById("result").value = "Verdadeiro";
+
+    }else{
+        document.getElementById("result").value = "Falso"
+    }
 
     document.getElementById("resultado").value = result;
 }
