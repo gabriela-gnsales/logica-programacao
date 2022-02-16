@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio switch</title>
+</head>
+<body>
+    <h1>Comparação</h1>
+    <hr>
+
+    <p><input type="number" id="n1" value="0" autofocus></p> <!-- placeholder="0" -->
+
+    <select id="operador">
+        <option>Selecione um operador</option>
+        <option value="==">==</option>
+        <option value="!=">!=</option>
+        <option value="&lt;">&lt;</option>
+        <option value="&lt;=">&lt;=</option>
+        <option value="&gt;">&gt;</option>
+        <option value="&gt;=">&gt;=</option>    
+    </select>
+
+    <!-- <p><strong>Escolha um dos seguintes operadores:</strong> igual (==), diferente (!=), menor (&lt;), menor igual (&lt;=), maior (&gt;), maior igual (&gt;=)</p>
+    <p><input id="operador" type="text" value=""></p> -->
+
+    <p><input type="number" id="n2" value="0"></p> <!-- placeholder="0" -->
+    <button onclick="comparacao3()">=</button>
+    <p><input id="resultado" type="text" value="--" disabled></p> <!-- value="false" -->
+
+    <script src="comparacao3.js"></script>
+</body>
+</html>
