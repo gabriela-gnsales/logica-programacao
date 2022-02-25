@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício aula dia 18/02/2022</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            margin: 0px;
+        }
+        p {
+            padding-bottom: 10px;           
+            padding-left: 20px;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 1.5em;
+            color: rgba(0, 0, 255, 0.685);
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+            padding: 20px;
+            font-weight: bold;
+        }
+        button {
+            background-color: rgba(0, 0, 255, 0.685);
+            border-radius: 30px;
+            height: 2.3em;
+            font-weight: bold;
+        }
+        input {
+            width: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cálculo IMC</h1>
+    <p>
+        <label>Altura:</label>
+        <input id="altura" type="text" autofocus></input>
+    </p>
+    <p>
+        <label>Peso:</label>
+        <input id="peso" type="text"></input>
+    </p>
+    <p><button onclick="calcular()">Calcular</button></p>
+    <p>
+        <label>IMC:</label>
+        <input type="text" id="imc" disabled>
+    </p>
+    <p>
+        <label>Classificação:</label>
+        <input id="classificacao" type="text" disabled>
+    </p>
+
+    <script src="imc.js"></script>    
+</body>
+</html>

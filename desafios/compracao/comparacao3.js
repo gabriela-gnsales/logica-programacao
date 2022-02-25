@@ -48,3 +48,10 @@ function comparacao3() {
 
     document.getElementById("resultado").value = result;
 }
+
+// function comparar(){
+//     var n1 =parseFloat(document.getElementById("n1").value);
+//     var n2 = parseFloat(document.getElementById("n2").value);
+//     var operador = document.getElementById("operador").value;
+//     var result= eval(n1+operador+n2);
+// }
