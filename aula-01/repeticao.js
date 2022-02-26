@@ -170,27 +170,52 @@ console.log("=== REPETIÇÃO ===");
 
 // document.write("<hr>");
 
-document.write("<h3>Desafio 2 - FOR</h3>"); 
+// document.write("<h3>Desafio 2 - FOR</h3>"); 
 
-for (let lin = 1; lin <= 10; lin++) {
-    for (let col = 0; col < lin; col++) {
-        document.write("*");
-    }
-    document.write("<br>");
-}
+// for (let lin = 1; lin <= 10; lin++) {
+//     for (let col = 0; col < lin; col++) {
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
 
-document.write("<hr>");
+// document.write("<hr>");
 
 document.write("<h3>Desafio 3 - para casa</h3>"); 
 // mandar o GitHub para o professor
 // 1ª linha = 20 colunas
 
-let x = 0;
-const ast = "*";
-for (let y = 1; y <= 20; y++) {
-    for (let x = 0; )
-    document.write(x*ast, "="*y, x*ast);
-    x = x + 1;
+// let x = 0;
+// const ast = "*";
+
+// console.log(ast, typeof ast);
+// for (let y = 20; y > 0; y = y -2) {
+//     for (let x = 1; x <=20; x++) {
+//         console.log(y)
+//         let lin_borda = x*ast;
+//         console.log(lin_borda);
+//         let lin_meio = "="*y;
+//         console.log(lin_mei);
+//         // document.write(lin);
+//     }
+// }
+
+for (let lin = 20; lin >= 1; lin--) {
+    for (let col = 0; col < lin; col++) {
+        // for (let x = 0; x < 20; x++) {
+            // document.write("=");
+            for (let y = 1; y < 20; y++){
+                let esp = "a";
+                document.write(esp);
+                for (let x = 20; x >= 1; x--) {
+                    document.write("=");
+                }
+                document.write(esp);
+                document.write("<br>");
+                esp = esp + "a";
+            }     
+    }
+        // document.write("<br>");
 }
 
 // *=================*
@@ -205,4 +230,31 @@ for (let y = 1; y <= 20; y++) {
 //          *
 
 // &nbsp; -> representa um espaço vazio
+
+// CÓDIGO COLEGA CURSO
+
+let esp = 0
+let lin = prompt("quantas linhas?:")
+if (lin >= 40) {
+    lin = 40;
+    document.write("maximo 40 linhas<br>");
+}
+let fim = lin-1
+let pir = fim+fim-1
+for (let index = 0; index < lin; index++) {
+    for (let index = 0; index < esp; index++) {
+        document.write("&ensp;");
+    }
+    document.write("*");
+    if (fim != esp) {
+        for (let index = 0; index < pir; index++) {
+            document.write("=");
+        }   
+        document.write("*<br>");
+        esp++;
+        pir = pir-2;
+    }
+    
+}
+
 
