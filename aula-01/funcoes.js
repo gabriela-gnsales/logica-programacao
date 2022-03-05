@@ -47,4 +47,24 @@ console.log(sum());
 console.log(sum(5));
 console.log(sum(5, 10));
 
+sum(3, 5); // 8
+
+console.log("=== ARROW FUNCTION ===");
+// ARROW FUNCTION
+
+// DE: function () {}
+// PARA: () => {}
+
+let numbers = [1, 2, 3];
+
+// numbers = numbers.forEach(function(value) {
+//     console.log(value);
+// });
+
+numbers.filter(function(value) {
+    return value < 3;
+})
+
+console.log(numbers);
+
 

@@ -89,29 +89,40 @@ numeros.forEach(function(value, index, numero) { // default = value, index, name
 // FILTER só é usado para VALORES LÓGICOS
 // o filter é como se fosse o for de um array com um if (dando return talvez)
 
-console.log(
-numeros.filter(function(numero) {
-    // console.log("exec?", arguments[2]);
-    console.log("filter?", numero);
-    return numero < 25;
-}));
+// console.log(
+// numeros.filter(function(numero) {
+//     // console.log("exec?", arguments[2]);
+//     console.log("filter?", numero);
+//     return numero < 25;
+// }));
 
-console.log(numeros);
+// console.log(numeros);
 
 // MAP é utilizado para remapear informações, aplicar transformação de dados
 
-console.log(
+// console.log(
     numeros = numeros.map(function(numero) {
         console.log("map?", numero);
         return numero * 5;
     })
-);
+// );
 
-console.log(numeros);
-
-
+// console.log(numeros);
 
 // function() { ... }(32, 0, numeros);
 // function() { ... }(21, 1, numeros);
 // function() { ... }(25, 2, numeros); ...
 
+// REDUCE
+
+console.log(
+    // numeros.reduce(callback, valorInicial)
+
+    numeros.reduce(function(previous, current, index, array) {
+        console.log("prev:", previous, "cur:", current)
+        // console.log("ind:", i;ndex, "arr:", array)
+        return previous + current;
+        // previous.push(current * 2);
+        // return previous;
+    }, 0)
+)
