@@ -133,14 +133,6 @@ modelo.focus();
 
 // o innerHTML degrada a performance do programa -> NUNCA UTILIZAR DENTRO DE UM LOOP
 
-/*
-AVALIAÇÃO
-1 - Fazer uma cópia do exercício da loja de carros
-2 - Adicionar uma coluna com um ID (ao lado do modelo)
-3 - Adicionar no formulário um campo para receber o preço
-4 - Exibir uma coluna com o preço
-5 - Exibir o total de todos os veículos cadastrados (requisito -> USAR REDUCE)
-*/
 
 
 
