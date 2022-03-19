@@ -20,7 +20,7 @@ function adicionar() {
     const cor = document.getElementById("cor");
     const situacao = document.getElementById("situacao");    
     const preco = document.getElementById("preco");
-    const precoTotal = document.getElementById("total");
+    const precoTotal = document.getElementById("precoTotal");
 
     console.log(id, modelo.value, ano.value, cor.value, situacao.value, preco.value, precoTotal.value);
 
@@ -36,9 +36,7 @@ function adicionar() {
     carros.push(carro);
     console.table(carros);  
 
-    let total = carros.reduce((total, carro) => {
-        return total + carro.preco;
-    }, 0);
+    total = carros.reduce((precoTotal , carro) => precoTotal  + carro.preco, 0);
 
     precoTotal.innerHTML = `R$ ${total.toFixed(2)}`
    

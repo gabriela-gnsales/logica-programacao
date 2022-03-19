@@ -26,9 +26,9 @@
 
     <label for="">Situação:</label>
     <select id="situacao">
-        <option value="Novo">Novo</option>
+        <option value="Novo (zero km)">Novo (zero km)</option>
+        <option value="Seminovo (até 5 anos de uso)">Seminovo (até 5 anos de uso)</option>
         <option value="Usado">Usado</option>
-        <option value="Zero">Zero KM</option>
     </select>
 
     <br><br>
@@ -48,7 +48,6 @@
                 <td>ID</td>
                 <td>Modelo</td>
                 <td>Ano</td>
-                <!-- td><a href=""></a>Ano</td> -->
                 <td>Cor</td>
                 <td>Situação</td>
                 <td>Preço</td>
@@ -62,7 +61,7 @@
         <tfoot>
             <tr>
                 <td colspan="5">Preço total:</td>
-                <td id="total"></td>
+                <td id="precoTotal"></td>
             </tr>
         </tfoot>
     </table>
