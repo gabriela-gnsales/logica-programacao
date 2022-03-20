@@ -10,7 +10,6 @@ AVALIAÇÃO
 console.log("=== CARROS ===");
 
 const carros = [];
-let total = null;
 
 function adicionar() {
 
@@ -36,7 +35,7 @@ function adicionar() {
     carros.push(carro);
     console.table(carros);  
 
-    total = carros.reduce((precoTotal , carro) => precoTotal  + carro.preco, 0);
+    let total = carros.reduce((precoTotal , carro) => precoTotal  + carro.preco, 0);
 
     precoTotal.innerHTML = `R$ ${total.toFixed(2)}`
    
